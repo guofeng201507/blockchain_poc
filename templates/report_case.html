@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>{{ title }} </title>
+  </head>
+  <body>
+
+      <h2>Report Your Case</h2>
+        <h3><table><form action="/raise_case" method="POST">
+         <tr>
+		  <td>
+          <label>Category:</label>
+		  </td>
+		  <td>
+            <select name="OPTION1" width="300px">
+				<option value="SCAM">Scam</option>
+				<option value="HACK">Hacking</option>   
+				<option value="SUSP">Suspicious</option>   
+            </select>
+		  </td>
+		 </tr>
+
+         <tr>
+		  <td>
+          <label>CryptoCurrency:</label>
+		  </td>
+		  <td>
+            <select name="OPTION2" width="300px">
+				<option value="BTC">Bitcoin</option>
+				<option value="ETH">Ethereum</option>   
+				<option value="BCH">Bitcoin Cash</option>   
+				<option value="XRP">Ripple</option>   
+				<option value="LTC">Litecoin</option>   				
+				<option value="MIOTA">IOTA</option>   				
+				<option value="DASH">Dash</option>   				
+				<option value="ADA">Cardano</option>   				
+				<option value="XEM">NEM</option>   				
+				<option value="XMR">Monero</option>   						
+            </select>
+		  </td>
+		 </tr>
+
+		 <tr>
+		  <td>
+			<label for="DOMAIN">Domain:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="DOMAIN" placeholder="Enter domain information" name="DOMAIN">
+		  </td>		 
+		 </tr>
+
+		 <tr>
+		  <td>
+			<label for="IPADR">IP Address:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="IPADR" placeholder="Enter IP Address" name="IPADR">
+		  </td>		 
+		 </tr>
+
+		 		 <tr>
+		  <td>
+			<label for="URL">URL:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="URL" placeholder="Enter URL" name="URL">
+		  </td>		 
+		 </tr>
+		 
+		 <tr>
+		  <td>
+			<label for="HASH">Hash:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="HASH" placeholder="Enter Hash Value" name="HASH">
+		  </td>		 
+		 </tr>
+
+		 <tr>
+		  <td>
+			<label for="WALLETADR">Wallet Address:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="WALLETADR" placeholder="Enter Wallet Address" name="WALLETADR">
+		  </td>		 
+		 </tr>		 
+
+		 <tr>
+		  <td>
+			<label for="TITLE">Title:</label>
+		  </td>
+		  <td>
+			<input type="text" class="form-control" id="TITLE" placeholder="Title" name="TITLE">
+		  </td>		 
+		 </tr>
+		 
+		 <tr>
+		  <td>
+			<label for="DESC">Detailed Description:</label>
+		  </td>
+		  <td>
+			<textarea cols="50" rows="10" class="form-control" id="DESC" placeholder="Please provide as detailed information as possible" name="DESC"></textarea>
+		  </td>		 
+		 </tr>	
+		 
+        <tr>
+		<td>  </td>
+		<td>
+		<button type="submit">Submit</button>
+		</td>
+		
+		</tr>
+		
+        </form></table></h3>
+
+
+  </body>
+</html>

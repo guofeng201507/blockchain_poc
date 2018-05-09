@@ -1,0 +1,35 @@
+<html>
+<head>
+
+</head>
+   <body>
+
+	  {% if result %}
+	     <h2>Search Result</h2>
+         {% for element in result %}         
+           <p>	<b>Case ID:   {{ element[0] }} </b> </p>
+		   <p>Category:  {{ element[1] }} </p>
+		   <p>CryptoCurrency:  {{ element[2] }} </p>
+		   <p>Wallet Address: {{ element[7] }} </p>
+		   <p>TX ID {{ element[0] }} </p>
+		   <p>Date:   {{ element[10] }} </p>
+		   <p>Reporter: {{ element[12] }} </p>
+		   <p>Title: {{ element[8] }} </p>
+		   <p><b>Original case detail:  </b></p>
+		   <p>{{ element[9] }} </p>		   
+		   <p><b>Validation confirmed by Sentinel </b></p>
+		   <p>{{ element[14] }} </p>			               
+         {% endfor %}
+      {% else %}	  
+	  <p></p>
+	  <p align="center"><font size="6">No available information </font></p>
+	  <p align="center">Would you want to report a case? </p>
+		<p align="center"><a  href = "/report"><b>Report</b></a></p>
+	  <p align="center"><font size="6">Or </font></p>
+	  {% endif %}
+	  
+   </body>
+   
+   	  <p align="center"><a href = "/">Search again</a> </p>
+	  
+</html>
